@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-gdam
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:Jikvb-devfile-sample-python-basic-gdam
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c65259cb30cf8d3eb9bf3eac02c072803f3c6cb9d977542accae285285a26f57
         name: my-python
         ports:
         - containerPort: 8081
