@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-gdam
+  namespace: rbohne-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c65259cb30cf8d3eb9bf3eac02c072803f3c6cb9d977542accae285285a26f57
+        name: my-python
+        resources: {}
+status: {}
